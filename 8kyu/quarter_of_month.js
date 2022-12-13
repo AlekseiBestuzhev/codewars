@@ -19,5 +19,11 @@ const quarterOf = (month) => {
 		return 'Enter correct number';
 	}
 }
-const a = quarterOf(0);
+const a = quarterOf(10);
 console.log(a);
+
+const quarterOf2 = (month) => {
+	return Math.ceil(month / 3);
+}
+const b = quarterOf2(10);
+console.log(b);
