@@ -4,9 +4,16 @@
 var summation = function (num) {
 	let sum = 0;
 	for (let i = 1; i <= num; i++) {
-		sum = sum + i;
+		sum += i;
 	}
 	return sum;
 }
 const result = summation(3);
 console.log(result);
+
+
+function summation2(num) {
+	return num * (num + 1) / 2
+}
+const result2 = summation2(5);
+console.log(result2);
