@@ -33,3 +33,10 @@ var humanYearsCatYearsDogYears = function (humanYears) {
 }
 const a = humanYearsCatYearsDogYears(10);
 console.log(a);
+
+const humanYearsCatYearsDogYears2 = $ =>
+	$ == 1 ? [1, 15, 15] :
+		$ == 2 ? [2, 24, 24] :
+			[$, 24 + (4 * ($ - 2)), 24 + (5 * ($ - 2))];
+const a2 = humanYearsCatYearsDogYears2(10);
+console.log(a2);
