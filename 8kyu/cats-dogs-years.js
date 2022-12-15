@@ -14,7 +14,21 @@
 // +5собачьи годы за каждый последующий год
 //Solution
 var humanYearsCatYearsDogYears = function (humanYears) {
-
+	if (humanYears == 1) {
+		return [1, 15, 15];
+	}
+	else if (humanYears == 2) {
+		return [2, 24, 24];
+	}
+	else if (humanYears > 2) {
+		let cY = 24;
+		let dY = 24;
+		for (let i = 3; i <= humanYears; i++) {
+			cY += 4;
+			dY += 5;
+		}
+		return [humanYears, cY, dY];
+	}
 	return [0, 0, 0];
 }
 const a = humanYearsCatYearsDogYears(10);
