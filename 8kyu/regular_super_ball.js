@@ -9,3 +9,7 @@ var Ball = function (ballType) {
 		this.ballType = 'super';
 	}
 };
+
+// var Ball = function(ballType) {
+// 	this.ballType = ballType || 'regular';
+//  };
