@@ -9,6 +9,10 @@ function grow(x) {
 	}
 	return a;
 }
-const x = [1, 2, 3];
+const x = [1, 2, 3, 4];
 const show = grow(x);
 console.log(show);
+
+function grow(x) {
+	return x.reduce((a, b) => a * b, 1);
+}
