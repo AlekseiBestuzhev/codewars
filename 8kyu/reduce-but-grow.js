@@ -3,5 +3,12 @@
 // [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
 //Solution
 function grow(x) {
-
+	let a = x[0];
+	for (let i = 1; i < x.length; i++) {
+		a *= x[i];
+	}
+	return a;
 }
+const x = [1, 2, 3];
+const show = grow(x);
+console.log(show);
