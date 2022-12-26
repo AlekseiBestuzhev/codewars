@@ -13,6 +13,6 @@ const x = [1, 2, 3, 4];
 const show = grow(x);
 console.log(show);
 
-function grow(x) {
-	return x.reduce((a, b) => a * b, 1);
-}
+// function grow(x) {
+// 	return x.reduce((a, b) => a * b);
+// } метод возвращает одно значение на основании всего массива, тут умножение элементов массива
