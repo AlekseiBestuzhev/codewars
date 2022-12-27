@@ -12,5 +12,10 @@ function findDifference(a, b) {
 	else return v2 - v1;
 }
 
-const result = findDifference([3, 2, 5], [1, 4, 4]);
+const result = findDifference([3, 4, 5], [8, 7, 4]);
 console.log(result);
+
+
+function findDifference(a, b) {
+	return Math.abs(a[0] * a[1] * a[2] - b[0] * b[1] * b[2]);
+} // abs - возвращает положительное число
