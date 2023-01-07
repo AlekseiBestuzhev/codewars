@@ -5,5 +5,11 @@
 // "This white dog has 4 legs."
 // Solution
 function animal(obj) {
-	return
-} 
+	return `This ${obj['color']} ${obj['name']} has ${obj['legs']} legs.`;
+}
+let beast = {
+	name: "dog",
+	legs: 4,
+	color: "white"
+}
+console.log(animal(beast));
