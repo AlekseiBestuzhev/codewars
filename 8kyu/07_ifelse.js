@@ -7,5 +7,10 @@
 // п >= 10					90
 // Solution
 function saleHotdogs(n) {
-	return;
+	let price;
+	if (n >= 10) price = 90;
+	else if (n < 10 && n >= 5) price = 95;
+	else price = 100;
+	return price * n;
 }
+console.log(saleHotdogs(11));
