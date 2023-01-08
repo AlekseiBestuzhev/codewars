@@ -15,16 +15,14 @@ function colorOf(r, g, b) {
 	if (red.length < 2) red = '0' + red;
 	if (green.length < 2) green = '0' + green;
 	if (blue.length < 2) blue = '0' + blue;
-	const color = '#' + red + green + blue;
-	return color;
+	return `#${red}${green}${blue}`;
 }
+
+console.log(colorOf(255, 0, 0));
 
 function colorOf(r, g, b) {
 	let red = r.toString(16);
 	let green = g.toString(16);
 	let blue = b.toString(16);
-	if (red.length < 2) red = '0' + red;
-	if (green.length < 2) green = '0' + green;
-	if (blue.length < 2) blue = '0' + blue;
-	return `#${red}${green}${blue}`;
+	return `#${red.padStart(2, '0')}${green.padStart(2, '0')}${blue.padStart(2, '0')}`;
 }
