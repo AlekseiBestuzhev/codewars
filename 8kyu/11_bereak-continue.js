@@ -6,6 +6,17 @@
 // Solution
 function grabDoll(dolls) {
 	var bag = [];
-
+	for (let i = 0; i < dolls.length; i++) {
+		if (bag.length === 3) {
+			break;
+		}
+		switch (dolls[i]) {
+			case 'Hello Kitty':
+			case 'Barbie doll':
+				bag.push(dolls[i]);
+			default:
+				continue;
+		}
+	}
 	return bag;
 }
