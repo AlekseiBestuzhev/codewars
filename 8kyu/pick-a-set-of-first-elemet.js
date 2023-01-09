@@ -8,3 +8,15 @@
 // first(arr, 3) //=> ['a', 'b', 'c'];
 // first(arr, 0) //=> [];
 // Solution
+function first(arr, n = 1) {
+	if (arr == null || arr.length == 0) return [];
+	let newArr = [];
+	if (arr.length >= n) {
+		for (let i = 0; i < n; i++) {
+			newArr.push(arr[i]);
+		}
+	}
+	else return arr;
+	return newArr;
+}
+console.log(first(['a', 'b', 'c', 'd', 'e'], 10));
