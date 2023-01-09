@@ -20,3 +20,6 @@ function first(arr, n = 1) {
 	return newArr;
 }
 console.log(first(['a', 'b', 'c', 'd', 'e'], 10));
+function first(arr, n = 1) {
+	return arr.slice(0, n);
+}
