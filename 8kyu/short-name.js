@@ -9,4 +9,8 @@ function abbrevName(name) {
 	const arr = name.split(' ');
 	return `${arr[0][0].toUpperCase()}.${arr[1][0].toUpperCase()}`;
 }
+
+console.log(abbrevName("sam harris"));
+
+const abbrevName = (name) => name.split(' ').map(i => i[0].toUpperCase()).join('.');
 console.log(abbrevName("sam harris"));
