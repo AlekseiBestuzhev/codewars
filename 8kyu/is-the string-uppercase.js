@@ -10,3 +10,7 @@
 String.prototype.isUpperCase = function () {
 	return this.toUpperCase() === this.toString();
 }
+
+String.prototype.isUpperCase = function () {
+	return !/[a-z]/.test(this);
+};
