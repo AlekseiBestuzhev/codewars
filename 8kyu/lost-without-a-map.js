@@ -10,4 +10,7 @@ function maps(x){
     }
     return arr;
 }
-console.log(maps([1, 2, 3]))
+console.log(maps([1, 2, 3]));
+function maps(x){
+    return x.map(n => n * 2);
+}
