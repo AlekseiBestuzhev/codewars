@@ -4,5 +4,10 @@
 // 	[1, 2, 3] --> [2, 4, 6]
 // Solution
 function maps(x){
-
+    const arr = [];
+    for (let i = 0; i < x.length; i++) {
+    arr.push(x[i] * 2);
+    }
+    return arr;
 }
+console.log(maps([1, 2, 3]))
