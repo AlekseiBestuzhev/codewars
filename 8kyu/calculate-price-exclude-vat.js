@@ -8,5 +8,5 @@
 // If null value given then return -1
 // Solution
 function excludingVatPrice(price){
-    return (price / 115 * 100).toFixed(2) || -1;
+    return price===null?-1:Number((price/1.15).toFixed(2));
 }
