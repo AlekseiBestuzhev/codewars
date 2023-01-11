@@ -20,9 +20,9 @@ function colorOf(r, g, b) {
 
 console.log(colorOf(255, 0, 0));
 
-function colorOf(r, g, b) {
-	let red = r.toString(16);
-	let green = g.toString(16);
-	let blue = b.toString(16);
-	return `#${red.padStart(2, '0')}${green.padStart(2, '0')}${blue.padStart(2, '0')}`;
-}
+//function colorOf(r, g, b) {
+// 	let red = r.toString(16);
+// 	let green = g.toString(16);
+// 	let blue = b.toString(16);
+// 	return `#${red.padStart(2, '0')}${green.padStart(2, '0')}${blue.padStart(2, '0')}`;
+// }
